@@ -1,0 +1,315 @@
+#postBanner{
+    background-image: url(../images/postbackround.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: '';
+        inset: 0;
+        background-color: $primaryColor;
+        opacity: .6;
+        z-index: -1;
+    }
+    .banner_info{
+        margin-top: 350px;
+        .title{
+            a{
+                color: $primaryWhite;
+                font-size: 14px;
+            }
+            span{
+                color: $textColor;
+                padding: 0px 10px;
+            }
+            p{
+                color: $textColor;
+                font-size: 14px;
+            }
+        }
+        h2{
+            font-size: 36px;
+            color: $primaryWhite;
+            margin: 20px 0px;
+        }
+        .katensummary{
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            .katen_tag{
+                padding-left: 20px;
+                a{
+                    color: $textColor;
+                    font-size: 14px;
+                }
+                span{
+                    display: inline-block;
+                    color: $primaryWhite;
+                    font-size: 20px;
+                    line-height: 10px;
+                    padding: 0px 10px;
+                }
+                p{
+                    color: $textColor;
+                    font-size: 14px;
+                }
+                i{
+                    font-size: 14px;
+                    color: $textColor;
+                    line-height: 20px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+#detailsPost{
+    margin-top: 80px;
+    .section_left{
+        .firstheading{
+            p{
+                color: $textColor2;
+                font-size: 16px;
+                padding-bottom: 15px;
+                a{
+                    color: $hoverColor;
+                    font-size: 16px;
+                }
+                b{
+                    font-size: 16px;
+                    background-color: yellow;
+                }
+            }
+            img{
+                width: 100%;
+            }
+            span{
+                color: #555;
+                font-size: 13px;
+            }
+
+        }
+        .secondheading{
+            margin-top: 10px;
+            img{
+                width: 45%;
+                padding-right: 20px;
+                padding-bottom: 30px;
+            }
+            p{
+                width: 55%;
+                font-size: 16px;
+                color: $textColor2;
+                a{
+                    color: $hoverColor;
+                    font-size: 16px;
+                }
+            }
+        }
+        .thirdHeading{
+            h2{
+                color: $primaryColor;
+                font-size: 28px;
+                font-weight: 700;
+                padding: 20px 0px
+            }
+            p{
+                color: $textColor2;
+                font-size: 16px;
+            }
+            img{
+                width: 49%;
+                margin-top: 20px;
+            }
+        }
+        .fourthHeading{
+            margin: 20px 0px;
+            border-bottom: 1px solid $borderColor;
+            h2{
+                font-size: 28px;
+                font-weight: 700;
+                color: $primaryColor;
+                margin-bottom: 20px;
+            }
+            .note{
+                padding-left: 30px;
+                p{
+                    color: $textColor2;
+                    font-size: 16px;
+                }
+            }
+            .lastpera{
+                color: $textColor2;
+                font-size: 16px;
+                margin: 20px 0px;
+                a{
+                    color: $hoverColor;
+                    font-size: 16px;
+                }
+            }
+        }
+        .socialSection{
+            p{
+                color: $textColor2;
+                font-size: 13px;
+            }
+            .social_icon{
+                @include socialIcon;
+            }
+            .tags{
+                a{
+                    color: $textColor2;
+                    padding: 4px 15px;
+                    margin: 0px 5px;
+                    font-size: 13px;
+                    border: 1px solid $borderColor;
+                    border-radius: 20px;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: $hoverColor;
+                        border: 1px solid $hoverColor;
+                    }
+                }
+            }
+        }
+        .athrbanner{
+            margin: 50px 0px;
+            .bannersection{
+                @include authorbanner;
+            }
+        }
+        .factsBlog{
+            .posts{
+                border: 1px solid $borderColor;
+                border-radius: 10px;
+                width: 49%;
+                .postdetails{
+                    padding: 30px;
+                    h6{
+                        color: $textColor2;
+                        font-size: 15px;
+                    }
+                    a{
+                        color: $primaryColor;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-top: 15px;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: $hoverColor;
+                        }
+                    }
+                }
+            }
+        }
+        .messageSection{
+            margin-top: 50px;
+            h2{
+                @include heading;
+            }
+            img{
+                margin-bottom: 40px
+            }
+            .formSection{
+                border: 1px solid $borderColor;
+                border-radius: 10px;
+                .innerSection{
+                    padding: 25px;
+                    h5{
+                        color: $textColor;
+                        font-size: 15px;
+                    }
+                    form{
+                        .inputArea{
+                            label {
+                                color: $textColor;
+                                font-size: 15px;
+                                margin-top: 20px;
+                                transition: all linear .3s;
+                                &:focus{
+                                    border: 1px solid $hoverColor;
+                                }
+                            }
+                            input {
+                                outline: none;
+                                border: 1px solid $borderColor;
+                                border-radius: 20px;
+                                padding: 5px 20px;
+                                width: 50%;
+                                transition: all linear .3s;
+                                &:focus{
+                                    border: 1px solid $hoverColor;
+                                }
+                            }
+                            textarea{
+                                outline: none;
+                                width: 100%;
+                                border: 1px solid $borderColor;
+                                border-radius: 10px;
+                                transition: all linear .3s;
+                                &:focus{
+                                    border: 1px solid $hoverColor;
+                                }
+                            }
+                        }
+                        .CheckBox{
+                            margin: 20px 0px;
+                            input{
+                                border: 1px solid $hoverColor;
+                                outline: none;
+                                &:focus{
+                                    border: 1px solid $primaryColor;
+                                }
+                            }
+                            label{
+                                color: $textColor;
+                                font-size: 15px;
+                            }
+                        }
+                        button{
+                            background: $gradiantColor;
+                            border: none;
+                            color: $primaryWhite;
+                            padding: 8px 35px;
+                            border-radius: 20px;
+                            transition: .3s;
+                            &:hover{
+                                background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%, #ffa387 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_right{
+        .katenBox{
+            @include katenBox;
+        }
+        .popularPost{
+            @include popularpost;
+        }
+        .exploretopics{
+            @include xploreTopics;
+        }
+        .newsletter{
+            @include newsLetter;
+        }
+        .celebrationInner{
+            margin-top: 50px;
+            @include clebrationSlider;
+        }
+        .sponsrImg{
+            @include sponsrImg;
+        }
+        .tagClouds{
+            @include tagClouds;
+        }
+    }
+}

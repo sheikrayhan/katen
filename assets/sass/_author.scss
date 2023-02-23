@@ -1,0 +1,35 @@
+#authorBanner{
+    margin: 30px 0px 80px 0px;
+    border-radius: 10px;
+    .bannersection{
+        @include authorbanner;
+    }
+}
+
+#lifestyle{
+    .section_left{
+        .listDots{
+            margin-top: 40px;
+            a{
+                color: $textColor;
+                font-size: 15px;
+                width: 40px;
+                height: 40px;
+                border: 1px solid $borderColor;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 2;
+                margin: 10px;
+                transition: all linear .3s;
+                &.active{
+                    color: $primaryWhite;
+                    background: $gradiantColor;
+                }
+                &:hover{
+                    color: $primaryWhite;
+                    background: $gradiantColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+// Archive Banner Section...
+#arcBanner{
+    @include headerBanner;
+}
+// Archive Banner Section End.
+
+// Lifestyle Section Start...
+#lifestyle{
+    .section_left{
+        .lifestyle_innerContainer {
+            border: 1px solid $borderColor;
+            border-radius: 10px;
+            .largePortal {
+                padding: 25px;
+                @include large_portal;
+            }
+        }
+        
+    }
+    .section_right {
+        .katenBox {
+            @include katenBox;
+        }
+        .popularPost{
+            @include popularpost;
+        }
+        .exploretopics{
+            @include xploreTopics;
+        }
+        .newsletter{
+            @include newsLetter;
+        }
+        .celebrationInner{
+            margin-top: 35px;
+            @include clebrationSlider;
+        }
+        .sponsrImg{
+            @include sponsrImg;
+        }
+        .tagClouds{
+            @include tagClouds;
+        }
+    }
+}
+// Lifestyle Section End.

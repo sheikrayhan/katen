@@ -1,0 +1,676 @@
+@mixin heading{
+    color: $primaryColor;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@mixin heading2{
+    margin-top: 30px;
+    h2 {
+        color: $primaryColor;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    img {
+        margin-bottom: 40px;
+    }
+}
+@mixin miniPortal{
+    .img {
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+                &:hover {
+                    transform: scale(1.07);
+                }
+            }
+            span{
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $primaryWhite;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                font-size: 15px;
+                text-align: center;
+                line-height: 20px;
+                border-radius: 50%;
+                background: $gradiantColor;
+            }
+        }
+        .info {
+            h3 {
+                font-size: 15px;
+                font-weight: 700;
+                color: $primaryColor;
+                transition: all linear .3s;
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+            p {
+                font-size: 14px;
+                color: $secondaryColor;
+                padding-top: 5px;
+            }
+        }
+}
+@mixin socialIcon{
+    ul {
+        padding: 0px;
+        li {
+            margin-right: 2px;
+            a {
+                padding: 7px;
+                color: $primaryColor;
+                font-size: 16px;
+                transition: all linear .3s;
+                &:hover {
+                    color: $hoverColor;
+                }
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@mixin thumbNail{
+    .thumbnail {
+            position: relative;
+            // overflow: hidden;
+            &:hover img{
+                transform: scale(1.1);
+            }
+            img {
+                border-radius: 10px !important;
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: all linear .3s;
+            }
+            a {
+                position: absolute;
+                top: 17px;
+                left: 17px;
+                color: $primaryWhite;
+                font-size: 13px;
+                padding: 3px 12px;
+                border-radius: 20px;
+                background: $gradiantColor;
+            }
+            i {
+                position: absolute;
+                bottom: -25px;
+                right: 25px;
+                color: $primaryWhite;
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                font-size: 22px;
+                text-align: center;
+                border-radius: 50%;
+                background: $gradiantColor;
+    
+            }
+        }
+        .thumbImg {
+            margin: 20px 0px;
+            .img {
+                img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                }
+            }
+            .info {
+                p {
+                    color: $textColor;
+                    margin-left: 20px;
+                    font-size: 14px;
+    
+                    a {
+                        color: $textColor;
+                        transition: .4s;
+    
+                        &:hover {
+                            color: $hoverColor;
+                        }
+                    }
+    
+                    span {
+                        font-size: 20px;
+                        color: $hoverColor;
+                        margin: 0px 5px;
+                    }
+                }
+            }
+        }
+        .thumbTitle {
+            h5 {
+                font-size: 20px;
+                color: $primaryColor;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all linear .3s;
+                &:hover{
+                    color: $hoverColor;
+                }
+            }
+            p {
+                font-size: 16px;
+                color: $textColor;
+                margin-top: 20px;
+            }
+        }
+}
+@mixin smallPortal{
+    .portal_view {
+            padding-bottom: 50px;
+            .title_img {
+                width: 30%;
+                overflow: hidden;
+                &:hover img{
+                    transform: scale(1.1);
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    transform: scale(1);
+                    transition: all linear .3s;
+                }
+            }
+            .titlle_info {
+                width: 70%;
+                padding-left: 20px;
+                h4 {
+                    font-size: 15px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    color: $primaryColor;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: $hoverColor;
+                    }
+                }
+                p {
+                    color: $textColor;
+                    font-size: 14px;
+                    padding-top: 10px;
+                }
+            }
+        }
+}
+@mixin xploreTopics{
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    h4 {
+        color: $primaryColor;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .explrItems {
+        margin: 15px 0px;
+        padding: 0px 25px;
+        i {
+            color: $hoverColor;
+            font-size: 14px;
+            line-height: 2 !important;
+        }
+        a {
+            color: $primaryColor;
+            font-size: 15px;
+            font-weight: 700;
+            transition: all linear .3s;
+            padding-left: 20px;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+        span {
+            color: $textColor;
+            font-size: 15px;
+        }
+    }
+}
+@mixin newsLetter{
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    margin-top: 50px;
+    h4 {
+        color: $primaryColor;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    p {
+        color: $primaryColor;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    form {
+        padding: 30px 40px;
+        input {
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: center;
+            border: 1px solid $borderColor;
+            border-radius: 20px;
+            padding: 5px 10px;
+            font-size: 15px;
+            &:focus {
+                border: 1px solid $hoverColor;
+            }
+        }
+        button {
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: center;
+            padding: 8px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            background: $gradiantColor;
+            margin-top: 10px;
+            transition: all linear .4s;
+            &:hover {
+                background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%, #ffa387 100%);
+            }
+        }
+
+    }
+    .policy {
+        padding: 0px 40px;
+        margin-bottom: 30px;
+        color: $textColor;
+        font-size: 13px;
+        font-family: sans-serif;
+        letter-spacing: -1px;
+        a {
+            color: #fe4f70;
+        }
+    }
+}
+@mixin slider_layout{
+    position: relative;
+    border-radius: 10px !important;
+    overflow: hidden;
+    &:hover .img img {
+        transform: scale(1.1);
+    }
+    .img {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            inset: 0;
+            background-color: $primaryColor;
+            opacity: .7;
+        }
+        img {
+            width: 100%;
+            transform: scale(1);
+            transition: all linear .3s;
+        }
+    }
+    .layoutTitle {
+        position: absolute;
+        top: 130px;
+        left: 20px;
+        padding: 20px;
+        a {
+            color: $primaryWhite;
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: $gradiantColor;
+            &:hover {
+                background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%,#ffa387 100%);
+            }
+        }
+        h5 {
+            color: $primaryWhite;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 20px 0px;
+        }
+        p {
+            color: $textColor;
+            font-size: 14px;
+            span {
+                padding: 0px 5px;
+            }
+        }
+    }
+}
+@mixin clbrtnSlider_layout{
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px !important;
+    &:hover .img img {
+        transform: scale(1.04);
+    }
+    .img{
+        img{
+            width: 100%;
+            height: 100%;
+            transform: scale(1);
+            transition: all linear .3s;
+        }
+        a{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: $primaryWhite;
+            padding: 2px 10px;
+            font-size: 14px;
+            border-radius: 20px;
+            background: $gradiantColor;
+            &:hover{
+                background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%, #ffa387 100%);
+            }
+        }
+    }
+    .layoutTitle {
+        h5 {
+            color: $primaryColor;
+            font-size: 22px;
+            font-weight: 700;
+            transition: all linear .3s;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+        p {
+            color: $textColor;
+            font-size: 14px;
+            span {
+                color: $hoverColor;
+                font-size: 25px;
+                padding: 0px 5px;
+            }
+        }
+    }
+}
+@mixin large_portal{
+    .imgview {
+        position: relative;
+        width: 40%;
+        img {
+            border-radius: 10px !important;
+            width: 100%;
+        }
+        i {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: $primaryWhite;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            background: $gradiantColor;
+        }
+    }
+    .portalTitle {
+        width: 60%;
+        padding-left: 25px;
+        .katenDoe {
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            p {
+                color: $textColor;
+                font-size: 14px;
+                a {
+                    color: $textColor;
+                    transition: all linear .3s;
+                    &:hover {
+                        color: $hoverColor;
+                    }
+                }
+                span {
+                    font-size: 30px;
+                    color: #fe4f70;
+                    padding: 0px 10px;
+                    line-height: 0;
+                }
+            }
+        }
+        h4 {
+            color: $primaryColor;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 15px 0px;
+            transition: all linear .3s;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+        p {
+            color: $textColor;
+            font-size: 16px;
+        }
+        .icon {
+            margin-top: 15px;
+            i {
+                color: $textColor;
+                font-size: 18px;
+            }
+        }
+    }
+}
+@mixin tagClouds{
+    margin-top: 50px;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    h2 {
+        color: $primaryColor;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .tags {
+        padding: 15px;
+        a {
+            color: $textColor;
+            padding: 2px 10px;
+            font-size: 13px;
+            margin: 5px;
+            border: 1px solid $borderColor;
+            border-radius: 15px;
+            transition: all linear .3s;
+            &:hover {
+                border: 1px solid $hoverColor;
+                color: $hoverColor;
+            }
+        }
+    }
+}
+@mixin fotterBanner{
+    margin-top: 80px;
+    .bg_layer {
+        position: relative;
+        .bg_img {
+            img {
+                width: 100%;
+                border-radius: 10px !important;
+                padding: 3px;
+            }
+        }
+        .button_card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            a {
+                color: $primaryWhite;
+                font-size: 14px;
+                padding: 10px 30px;
+                background: $gradiantColor;
+                border-radius: 20px;
+                &:hover {
+                    background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%, #ffa387 100%);
+                }
+            }
+        }
+    }
+}
+@mixin katenBox{
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    .logoImg {
+        img {
+            padding: 40px 0px 20px 0px;
+        }
+        p {
+            color: $textColor;
+            font-size: 15px;
+            padding: 0px 20px 20px 20px;
+            text-align: center;
+        }
+    }
+    .socialIcon {
+        @include socialIcon;
+    }
+}
+@mixin popularpost{
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    margin: 35px 0px;
+    h5 {
+        color: $primaryColor;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px 0px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .portal {
+        .miniPortal {
+            padding: 10px 10px;
+            @include miniPortal;
+        }
+    }
+}
+@mixin clebrationSlider{
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    h2 {
+        @include heading;
+        margin-top: 30px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .celebrationSlider {
+        .layout {
+            @include clbrtnSlider_layout;
+        }
+
+    }
+}
+@mixin sponsrImg{
+    margin-top: 40px;
+    h6 {
+        color: $textColor;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
+@mixin headerBanner{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    background-color: #f1f8ff;
+    ;
+    .bannerInfo {
+        padding: 40px 0px;
+        h5 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p {
+            color: $textColor;
+            font-size: 14px;
+            a {
+                color: $textColor;
+                transition: all linear .3s;
+
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+}
+@mixin authorbanner{
+    background-color: #f1f8ff;
+    padding: 25px;
+    .innerContainer{
+        .img_section{
+            width: 10%;
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .titleSection{
+            width: 90%;
+            padding-left: 30px;
+            h2{
+                color: $primaryColor;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            p{
+                color: $textColor;
+                font-size: 15px;
+                padding: 8px 0px;
+            }
+            .social_icon{
+                @include socialIcon;
+            }
+        }
+    }
+}

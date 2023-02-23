@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katen | Minimal Blog & Magazine</title>
+    <!-- Favicon link -->
+    <link rel="icon" href="./assets/images/katen.png">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome Css Link -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <!-- Bootstrap Css Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Slick CSS link -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css">
+    <!-- Main Css Link -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- Responsive Css Link -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Popup Section Start -->
+    <section id="spopup">
+        <div class="popupcontainer d-flex justify-content-center align-items-center h-100">
+            <div>
+                <h3 class="text-center">Press ESC to close</h3>
+                <i class="fa-solid fa-xmark removeIcon"></i>
+                <form action="">
+                    <input type="text" placeholder="Search and Press Enter">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Popup Section End -->
+    <!-- Navbar Start -->
+    <section id="navbar">
+        <div class="sideMenu">
+            <div class="logoSection">
+                <img src="./assets/images/logo.svg" alt="" class="img-fluid">
+                <i class="fa-solid fa-xmark hide_btn"></i>
+            </div>
+            <div class="menuUl">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Culture
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Feature
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Shop
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social_icon me-auto">
+                <ul class="d-flex flex-wrap">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand brand_logo" href="index.html">
+                        <img src="./assets/images/logo.svg" alt="" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar_toggler" aria-controls="navbar_toggler" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span>
+                            <i class="fa-solid fa-bar"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar_toggler">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    Home
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">Magazine</a></li>
+                                    <li><a href="#">Personal</a></li>
+                                    <li><a href="#">Personal Alt</a></li>
+                                    <li><a href="#">Classic</a></li>
+                                    <li><a href="#">Minimal</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lifestyle</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Culture</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">
+                                    Features
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">Post Layouts</a></li>
+                                    <li><a href="#">Post Formats</a></li>
+                                    <li><a href="archivePage.html">Archive</a></li>
+                                    <li><a href="authorPage.html">Author Page</a></li>
+                                    <li><a href="contact.html">Contact Page</a></li>
+                                    <li><a href="#">Paginated Page</a></li>
+                                    <li><a href="four04.html">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">
+                                    Shop
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="social_icon me-auto">
+                            <ul class="d-flex flex-wrap">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="searchBar">
+                            <button id="searchForm"><a href="#0">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a></button>
+                            <button><a href="#0">
+                                    <i id="sideBar" class="fa-solid fa-bars"></i>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Navbar End -->
+
+    <!-- Author Banner Section Start -->
+    <section id="authorBanner">
+        <div class="container bannersection">
+            <div class="innerContainer d-flex flex-wrap">
+                <div class="img_section">
+                    <img src="./assets/images/katendoeImg.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="titleSection">
+                    <h2>Katen Doe</h2>
+                    <p>Hello, I’m a content writer who is fascinated by content fashion, celebrity and lifestyle. She helps clients bring the
+                    right content to the right people.</p>
+                    <div class="social_icon">
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Author Banner Section End -->
+    
+
+    <!-- Lifestyle Section Start -->
+    <section id="lifestyle">
+        <div class="container">
+            <div class="row">
+                <div class="section_left col-lg-8">
+                    <div class="lifestyle_innerContainer">
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/bigPortal1.jpg" alt="" class="img-fluid">
+                                <i class="fa-regular fa-image"></i>
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a
+                                            href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>60 Things To Immediately Do About Building</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/img10.jpg" alt="" class="img-fluid">
+                                <!-- <i class="fa-regular fa-image"></i> -->
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/bigportal2.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a
+                                            href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>Master The Art Of Nature With These 7 Tips</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/big portal3.jpg" alt="" class="img-fluid">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a
+                                            href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>Facts About Business That Will Help You Success</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/big potal4,jpg.jpg" alt="" class="img-fluid">
+                                <!-- <i class="fa-solid fa-video"></i> -->
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a
+                                            href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>Your Light Is About To Stop Being Relevant</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/img10.jpg" alt="" class="img-fluid">
+                                <i class="fa-regular fa-image"></i>
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a
+                                            href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>Easy Ways To Learn Everything About Construction</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/sportal2.jpg" alt="" class="img-fluid">
+                                <!-- <i class="fa-regular fa-image"></i> -->
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a
+                                            href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>How To Buy Bulb On a Tight Budget</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/imgportalLayout2.jpg" alt="" class="img-fluid">
+                                <!-- <i class="fa-solid fa-video"></i> -->
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>Feel Like A Pro With The Help Of These 7 Tips</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/sunsetlike.jpg" alt="" class="img-fluid">
+                                <!-- <i class="fa-solid fa-video"></i> -->
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>15 Unheard Ways To Achieve Greater Walker</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/Chair.jpg" alt="" class="img-fluid">
+                                <!-- <i class="fa-regular fa-image"></i> -->
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>Your Light Is About To Stop Being Relevant</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="largePortal d-flex flex-wrap">
+                            <div class="imgview">
+                                <img src="./assets/images/sunglass.jpg" alt="" class="img-fluid">
+                                <!-- <i class="fa-regular fa-image"></i> -->
+                            </div>
+                            <div class="portalTitle">
+                                <div class="katenDoe d-flex align-items-center">
+                                    <img src="./assets/images/mportal 1.jpg" alt="" class="img-fluid">
+                                    <p>
+                                        <a href="#">Katen Doe</a> <span>.</span> <a href="#">Trending</a><span>.</span>August 23, 2022
+                                    </p>
+                                </div>
+                                <h4>Your Light Is About To Stop Being Relevant</h4>
+                                <p>The European languages are members of the same family. Their separate existence is a
+                                    myth.…</p>
+                                <div class="icon d-flex">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-ellipsis ms-auto"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listDots text-center">
+                        <a class="active" href="#0">1</a>
+                        <a href="#0">2</a>
+                        <a href="#0"> >> </a>
+                    </div>
+                </div>
+
+                <div class="section_right col-lg-4">
+                    <div class="katenBox">
+                        <div class="logoImg text-center">
+                            <img src="./assets/images/logo.svg" alt="" class="img-fluid ">
+                            <p>Hello, We’re content writer who is fascinated by content fashion, celebrity and
+                                lifestyle. We helps clients
+                                bring the
+                                right content to the right people.</p>
+                        </div>
+                        <div class="socialIcon d-flex justify-content-center">
+                            <ul class="d-flex flex-wrap">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popularPost">
+                        <h5 class="text-center">Popular Post</h5>
+                        <img src="/assets/images/shape.svg" alt="" class="img-fluid">
+                        <div class="portal">
+                            <div class="miniPortal d-flex flex-wrap align-items-center">
+                                <div class="img w-25">
+                                    <a href="#">
+                                        <img src="./assets/images/portal2.jpg" alt="" class="img-fluid">
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="info w-75">
+                                    <a href="#">
+                                        <h3>Facts About Business That Will Help You Success</h3>
+                                    </a>
+                                    <p>August 19, 2022</p>
+                                </div>
+                            </div>
+                            <div class="miniPortal d-flex flex-wrap align-items-center">
+                                <div class="img w-25">
+                                    <a href="#">
+                                        <img src="./assets/images/portal4.jpg" alt="" class="img-fluid">
+                                        <span>2</span>
+                                    </a>
+                                </div>
+                                <div class="info w-75">
+                                    <a href="#">
+                                        <h3>15 Unheard Ways To Achieve Greater Walker</h3>
+                                    </a>
+                                    <p>August 19, 2022</p>
+                                </div>
+                            </div>
+                            <div class="miniPortal d-flex flex-wrap align-items-center">
+                                <div class="img w-25">
+                                    <a href="#">
+                                        <img src="./assets/images/portal4.1.jpg" alt="" class="img-fluid">
+                                        <span>3</span>
+                                    </a>
+                                </div>
+                                <div class="info w-75">
+                                    <a href="#">
+                                        <h3>5 Easy Ways You Can Turn Future Into Success</h3>
+                                    </a>
+                                    <p>August 19, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exploretopics">
+                        <h4 class="text-center">Explore Topics</h4>
+                        <img src="./assets/images/shape.svg" alt="" class="img-fluid">
+
+                        <div class="explrItems d-flex">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Celebration</a>
+                            <span class="d-inline-block ms-auto">(1)</span>
+                        </div>
+                        <div class="explrItems d-flex">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Culture</a>
+                            <span class="d-inline-block ms-auto">(2)</span>
+                        </div>
+                        <div class="explrItems d-flex">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Fashion</a>
+                            <span class="d-inline-block ms-auto">(5)</span>
+                        </div>
+                        <div class="explrItems d-flex">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Lifestyle</a>
+                            <span class="d-inline-block ms-auto">(6)</span>
+                        </div>
+                        <div class="explrItems d-flex">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Politics</a>
+                            <span class="d-inline-block ms-auto">(1)</span>
+                        </div>
+                        <div class="explrItems d-flex">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Trending</a>
+                            <span class="d-inline-block ms-auto">(11)</span>
+                        </div>
+                        <div class="explrItems d-flex">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Inspiration</a>
+                            <span class="d-inline-block ms-auto">(1)</span>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h4 class="text-center">Newsletter</h4>
+                        <img src="./assets/images/shape.svg" alt="" class="img-fluid">
+                        <p class="text-center">Join 70,000 subscribers!</p>
+                        <form action="">
+                            <input class="d-block" type="email" placeholder="Email address">
+                            <button type="submit">Sign In</button>
+                        </form>
+                        <p class="policy text-center">By signing up, you agree to our <a href="#">Privacy Policy</a></p>
+                    </div>
+                    <div class="celebrationInner">
+                        <h2 class="text-center">Celebration</h2>
+                        <img src="./assets/images/shape.svg" alt="" class="img-fluid">
+                        <div class="celebrationSlider">
+                            <div class="layout">
+                                <div class="img">
+                                    <img src="./assets/images/imgportalLayouts1.jpg" alt="">
+                                    <a href="#">Celebration</a>
+                                </div>
+                                <div class="layoutTitle">
+                                    <h5>60 Things To Immediately Do About Building</h5>
+                                    <p>Katten Doe <Span>.</Span> August 16,2022</p>
+                                </div>
+                            </div>
+                            <div class="layout">
+                                <div class="img">
+                                    <img src="./assets/images/imgportalLayout2.jpg" alt="">
+                                    <a href="#">Celebration</a>
+                                </div>
+                                <div class="layoutTitle">
+                                    <h5>60 Things To Immediately Do About Building</h5>
+                                    <p>Katten Doe <Span>.</Span> August 16,2022</p>
+                                </div>
+                            </div>
+                            <div class="layout">
+                                <div class="img">
+                                    <img src="./assets/images/imgportalLayout3.jpg" alt="">
+                                    <a href="#">Politic</a>
+                                </div>
+                                <div class="layoutTitle">
+                                    <h5>Your Light Is About To Stop Being Relevant</h5>
+                                    <p>Katten Doe <Span>.</Span> August 16,2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sponsrImg">
+                        <h6 class="text-center">- Sponsored Ad -</h6>
+                        <img src="./assets/images/ad-360.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="tagClouds">
+                        <h2 class="text-center">Tag Clouds</h2>
+                        <img src="./assets/images/shape.svg" alt="" class="img-fluid">
+                        <div class="tags">
+                            <a href="">#Audio</a>
+                            <a href="">#Content</a>
+                            <a href="">#Featured</a>
+                            <a href="">#Image</a>
+                            <a href="">#Inspiration</a>
+                            <a href="">#Lifestyle</a>
+                            <a href="">#Photo</a>
+                            <a href="">#Pic</a>
+                            <a href="">#Slide</a>
+                            <a href="">#Trending</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lifestyle Section End -->
+
+    <!-- Footer Banner Section Start -->
+    <section id="ftrBanner">
+        <div class="container bg_layer">
+            <div class="row">
+                <div class="bg_img col-lg-4 d-flex g-0">
+                    <img src="./assets/images/ftrBanner_img1.jpg" alt="" class="img-fluid">
+                    <img src="./assets/images/ftrBanner_img2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="bg_img col-lg-4 d-flex g-0">
+                    <img src="./assets/images/ftrBanner_img3.jpg" alt="" class="img-fluid">
+                    <img src="./assets/images/ftrBanner_img4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="bg_img col-lg-4 d-flex g-0">
+                    <img src="./assets/images/ftrBanner_img5.jpg" alt="" class="img-fluid">
+                    <img src="./assets/images/ftrBanner_img6.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="button_card">
+                <a href="$">@Katen on Instagram</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Banner Section End -->
+
+    <!-- Footer Section Start -->
+    <section id="footer">
+        <div class="container innerContainer">
+            <div class="row">
+                <div class="col-lg-4 copyrightSection">
+                    <p>
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script> Katen. Theme by ThemeGer.
+                    </p>
+                </div>
+                <div class="col-lg-4 socialSection">
+                    <div class="socialIcon d-flex justify-content-center ">
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 backtoTop d-flex">
+                    <button class="ms-auto">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        Back to Top
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Jquery Js Link -->
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <!-- Slick JS Link -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Bootstrap Js Link -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Main Js Link -->
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

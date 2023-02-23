@@ -1,0 +1,93 @@
+// Contact Layout Section Start...
+#ContactLayout{
+    .contactInnerdiv{
+        .contactInfo{
+            border: 1px solid $borderColor;
+            border-radius: 10px;
+            padding: 20px;
+            .icon{
+                i{
+                    color: $primaryWhite;
+                    font-size: 20px;
+                    width: 55px;
+                    height: 55px;
+                    line-height: 55px;
+                    text-align: center;
+                    border-radius: 10px;
+                    background: $gradiantColor;
+                }
+            }
+            .info{
+                h6{
+                    color: $primaryColor;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                a{
+                    color: $textColor;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+// Contact Layout Section End.
+
+// Contact Form Section Start...
+#ContactForm{
+    margin-top: 80px;
+    h2{
+        @include heading;
+    }
+    img{
+        margin-bottom: 40px;
+    }
+    form{
+        .c_form{
+            input{
+                color: $textColor;
+                background: none;
+                border: none;
+                border: 1px solid $borderColor;
+                margin-top: 30px;
+                padding: 7px 30px;
+                border-radius: 20px;
+                outline: none;
+                transition: all linear .3s;
+                &:focus{
+                    border: 1px solid $hoverColor;
+                }
+            }
+            .small_input{
+                width: 545px;
+            }
+            textarea{
+                resize: none;
+                outline: none;
+                margin: 30px 0px;
+                color: $textColor;
+                font-family: 'Roboto', sans-serif;
+                border: 1px solid $borderColor;
+                padding: 7px 30px;
+                border-radius: 20px;
+                height: 120px;
+                &:focus{
+                    border: 1px solid $hoverColor;
+                }
+            }
+            button{
+                background: none;
+                border: none;
+                color: $primaryWhite;
+                font-size: 14px;
+                padding: 10px 40px;
+                background: $gradiantColor;
+                border-radius: 20px;
+                &:hover{
+                    background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%, #ffa387 100%);
+                }
+            }
+        }
+    }
+}
+// Contact Form Section End.

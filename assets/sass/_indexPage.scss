@@ -1,0 +1,534 @@
+// Navbar Section Start ...
+#spopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    background-color: $primaryWhite;
+    .popupcontainer{
+        position: relative;
+        h3{
+            color: $primaryColor;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .removeIcon{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: $primaryColor;
+            font-size: 20px;
+            padding: 10px;
+            transition: .3s;
+            &:hover{
+                color: $hoverColor;
+            }
+        }
+        form{
+            margin-top: 40px;
+            input, button{
+                border: none;
+                background: none;
+            }
+            input{
+                color: $primaryColor;
+                font-size: 15px;
+                width: 500px;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid $borderColor;
+                &:focus{
+                    border: 1px solid $hoverColor;
+                }
+            }
+            button{
+                margin-left: 22px;
+                padding: 10px 40px;
+                border-radius: 20px;
+                background: $gradiantColor;
+                &:hover{
+                    background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%, #ffa387 100%);
+                }
+                i{
+                    color: $primaryWhite;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+#navbar{
+    background-color: $primaryWhite;
+    &.menuActive {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.6);
+            z-index: 999999999;
+            animation: menu_fixed 1s;
+        }
+        @keyframes menu_fixed {
+            from {
+                top: -100px;
+            }
+    
+            to {
+                top: 0px;
+            }
+        }
+    .sideMenu{
+        position: relative;
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        background-color: $primaryWhite;
+        top: 0;
+        right: 0;
+        z-index: 999999999;
+        margin-right: -300px;
+        transition: .2s;
+        overflow-y: auto;
+        &.sidemenuActive {
+            margin-right: 0px;
+        }
+        .logoSection{
+            margin-top: 95px;
+            padding-left: 40px;
+            i{
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                cursor: pointer;
+                padding: 5px;
+                color: $secondaryColor;
+                font-size: 22px;
+                transition: all linear .3s;
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
+        }
+        .menuUl{
+            margin-top: 50px;
+            padding-left: 40px;
+            padding-right: 30px;
+            ul{
+                li{
+                    border-bottom: 1px solid $borderColor;
+                    a{
+                        color: $primaryColor;
+                        font-size: 15px;
+                        padding: 10px 10px 10px 0px;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: $hoverColor;
+                        }
+                        i{
+                            color: $hoverColor;
+                            line-height: 0;
+                            font-size: 14px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .social_icon{
+            position: absolute;
+            left: 40px;
+            bottom: 40px;
+            @include socialIcon;
+        }
+    }
+    nav{
+        padding: 22px 0px;
+        .brand_logo{
+            margin-right: 30px;
+        }
+        ul{
+            li{
+                position: relative;
+                &:hover .sub_menu{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 110%;
+                }
+                a{
+                    color: $secondaryColor;
+                    padding: 8px 20px;
+                    font-size: 14px;
+                    border-radius: 20px;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                    &.active{
+                        background: linear-gradient(to right, #fe4f70 0%, #ffa387 100%);
+                        color: $primaryWhite;
+                    }
+                    i{
+                        font-size: 10px;
+                    }
+                    
+                }
+                .sub_menu{
+                    background-color: $primaryWhite;
+                    position: absolute;
+                    border-radius: 10px;
+                    top: 150%;
+                    left: 20px;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 999;
+                    transition: all linear .4s;
+                    li{
+                        a{
+                            color: $textColor;
+                            width: 100%;
+                            font-size: 14px;
+                            transition: .4s;
+                            margin: 5px 50px 5px 5px;
+                            &:hover{
+                                color: $hoverColor;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .social_icon{
+            margin-left: 60px;
+            @include socialIcon;
+        }
+        .searchBar{
+            button{
+                border: none;
+                background: none;
+                a{
+                    margin-left: 15px;
+                    color: $primaryWhite;
+                    padding: 10px;
+                    height: 37px;
+                    width: 37px;
+                    line-height: 0px;
+                    border-radius: 50%;
+                    background: linear-gradient(to top, #ffa387 0%, #fe4f70 51%, #ffa387 100%);
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background: linear-gradient(to right, #ffa387 0%, #fe4f70 51%, #ffa387 100%);
+                    }
+                    i{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Banner CSS Section Start...
+#banner{
+    .img_section{
+        padding-right: 20px;
+        position: relative;
+        .thumb_img{
+            position: relative;
+            border-radius: 10px !important;
+            overflow: hidden;
+            &:hover img{
+                transform: scale(1.1);
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                inset: 0;
+                background-color: $primaryColor;
+                opacity: 0.6;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: all linear .4s;
+            }
+        }
+        .thumb_title{
+            position: absolute;
+            left: 65px;
+            bottom: 40px;
+            .insButton{
+                color: $primaryWhite;
+                font-size: 13px;
+                padding: 5px 10px;
+                border-radius: 20px;
+                background: $gradiantColor;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    background: linear-gradient(to left, #fe4f70 0%, #ffa387 61%, #ffa387 100%);
+                }
+            }
+            h1{
+                a{
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: $primaryWhite;
+                    padding: 20px 0px;
+                }
+            }
+            p{
+                color: $secondaryColor;
+                font-size: 14px;
+                a{
+                    color: $primaryWhite;
+                    transition: .3s;
+                    &:hover{
+                        color: $hoverColor;
+                    }
+                }
+                span{
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+    .details_section{
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+        .details_container{
+            padding: 25px 10px;
+            .buttons{
+                li{
+                    margin: 0px 10px;
+                    margin-bottom: 30px;
+                    a{
+                        font-size: 15px;
+                        color: $secondaryColor;
+                        padding: 8px 45px;
+                        border-radius: 25px;
+                        border: 1px solid $borderColor;
+                        &.active{
+                            background: $gradiantColor;
+                            color: $primaryWhite;
+                        }
+                    }
+                }
+            }
+            .miniPortal{
+                padding-bottom: 48px;
+                &:last-child{
+                    padding-bottom: 0px;
+                }
+                @include miniPortal;
+            }
+        }
+    }
+}
+// Banner CSS Section End.
+
+// Editors pick CSS Section Start... 
+#editorsPic{
+    margin: 50px 0px 0px 0px;
+    .section_left{
+        h3{
+            @include heading;
+        }
+        .shape{
+            margin-bottom: 40px;
+        }
+        .innerContainer{
+            border: 1px solid $borderColor;
+            border-radius: 10px;
+            .editors_details{
+                padding: 25px;
+                .thumbSection{
+                    padding-right: 22px;
+                    @include thumbNail;
+                }
+                .small_portal{
+                    @include smallPortal;
+                }
+            }
+        }
+        .miniBanner {
+            margin-top: 20px;
+            h6 {
+                font-size: 12px;
+                color: $secondaryColor;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section_right{
+        .katenBox{
+            @include katenBox;
+        }
+        .popularPost{
+            @include popularpost;
+        }
+    }
+    
+}
+// Editors pick CSS Section End. 
+
+// Trending CSS section Start...
+#trending{
+    .sectionLeft{
+        margin-top: 50px;
+        h3{
+            @include heading;
+        }
+        .shape{
+            margin-bottom: 40px;
+        }
+        .innerSection{
+            border: 1px solid $borderColor;
+            border-radius: 10px;
+            .innerThumbsection {
+                .thumbSection {
+                    padding: 30px;
+                    &:first-child{
+                        padding-right: 15px;
+                    }
+                    &:last-child{
+                        padding-left: 15px;
+                    }
+                    @include thumbNail;
+                }
+            }
+            .innerPortalsection{
+                .small_portal{
+                    padding: 30px 30px 0px 30px;
+                    @include smallPortal;
+                    .portal_view{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .sectionRight{
+        .exploretopics{
+            @include xploreTopics;
+        }
+        .newsletter{
+           @include newsLetter;
+        }
+    }
+}
+// Trending CSS section End.
+
+// Inspiration CSS Section Start...
+#inspiration{
+    .sectionLeft{
+        margin-top: 30px;
+        .heading {
+            @include heading2;
+        }
+        .insprtnSlider {
+            .layout {
+                @include slider_layout;
+            }
+        }
+    }
+    .sectionRight{
+        .celebrationInner{
+            margin-top: -70px;
+            @include clebrationSlider;
+        }
+    }
+    
+}
+// Inspiration CSS Section End.
+
+// Latest Post Css Section Start...
+#ltPost{
+    .sectionLeft{
+        margin-top: 30px;
+        .heading{
+            @include heading2;
+        }
+        .postinnerContainer{
+            border: 1px solid $borderColor;
+            border-radius: 10px;
+            .largePortal{
+                padding: 25px;
+                @include large_portal;
+            }
+            .loadMore{
+                margin-bottom: 30px;
+                a{
+                    color: $textColor;
+                    border: 1px solid $borderColor;
+                    font-size: 14px;
+                    padding: 5px 25px;
+                    border-radius: 20px;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: $hoverColor;
+                        border: 1px solid $hoverColor;
+                    }
+                }
+            }
+        }
+    }
+    .sectionRight{
+        .sponsrImg{
+            @include sponsrImg;
+        }
+        .tagClouds{
+            @include tagClouds;
+        }
+    }
+}
+// Latest Post Css Section End.
+
+// Footer Banner CSS Section Start...
+#ftrBanner{
+    @include fotterBanner;
+}
+// Footer Banner CSS Section End.
+
+// Footer Section CSS Start...
+#footer{
+    margin-top: 80px;
+    .innerContainer{
+        border-top: 1px solid $borderColor;
+        padding: 50px 0px;
+        .copyrightSection{
+            p{
+                color: $textColor;
+                font-size: 15px;
+            }
+        }
+        .socialSection{
+            .socialIcon{
+                @include socialIcon;
+            }
+        }
+        .backtoTop{
+            button{
+                background: none;
+                border: none;
+                color: $textColor;
+                font-size: 13px;
+                border: 1px solid $primaryWhite;
+                padding: 10px 30px;
+                border-radius: 25px;
+                transition: all linear .3s;
+                &:hover{
+                    border: 1px solid $hoverColor;
+                    color: $hoverColor;
+                }
+                i{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+// Footer Section CSS End.
