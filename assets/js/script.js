@@ -19,10 +19,10 @@ $(function () {
 
    // PopUp Js...
    $('#searchForm').on('click', function () {
-      $('#spopup').show(500);
+      $('#spopup').addClass('active');
    })
    $('.removeIcon').on('click', function () {
-      $('#spopup').hide(500);
+      $('#spopup').removeClass('active');
    })
 
    // Side Menu js
